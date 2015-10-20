@@ -3,10 +3,23 @@
   head
     meta charset="utf-8"
   body
-
+    header
+      p class="notice"
+        = notice
+      p class="alert"
+        = alert
     ons-page modifier="material"
+      div
+        - if user_signed_in?
+          | Welcome
+          = current_user.email
+          = link_to "Sign out", destroy_user_session_path, :method => :delete
+        - else
+          = link_to "Sign in", new_user_session_path
+          | or
+          = link_to "Sign up", new_user_registration_path
       ons-toolbar modifier="material"
-        div class="center" Speed Dial
+        div class="center" Wosh Center
     footer
       javascript:
         var module = ons.bootstrap()
