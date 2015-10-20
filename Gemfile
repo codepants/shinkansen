@@ -3,11 +3,9 @@ ruby '2.2.2', :engine => 'jruby', :engine_version => '9.0.1.0'
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.4'
-
+gem 'lograge'
 gem 'slim-rails', '3.0.1'
 
-gem 'simple_form'
-gem 'lograge'
 
 gem 'bson', '3.2.6'
 gem 'mongoid', '5.0.0'
