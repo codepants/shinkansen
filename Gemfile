@@ -1,20 +1,27 @@
 source 'https://rubygems.org'
 
+ruby '2.2.2', :engine => 'jruby', :engine_version => '9.0.1.0'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 
 gem 'slim-rails', '3.0.1'
 
+gem 'rails_admin'
+gem 'simple_form'
+gem 'lograge'
 
+gem 'bson', '3.2.6'
 gem 'mongoid', '5.0.0'
+# gem 'mongoid-locker'
+# gem 'mongoid-paranoia'
+#gem 'mongoid-autoinc'
+# gem 'mongoid-enum'
+# gem 'mongoid-geospatial'
+gem 'mongoid_fulltext'
 
 gem 'sass-rails'
-# Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyrhino'
 
 gem 'awesome_print', group: :development
@@ -27,9 +34,9 @@ gem 'devise'
 # bundle the tzinfo-data gem(windows)
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :jruby]
 
-#
-# gem 'multi_json'
-# gem 'omniauth', '1.2.2'
-# gem 'omniauth-twitter', '1.2.1'
+gem 'omniauth', '1.2.2'
+gem 'omniauth-twitter', '1.2.1'
 # gem 'omniauth-facebook', '2.0.1'
 # gem 'omniauth-google-oauth2','0.2.8'
+
+gem 'puma'

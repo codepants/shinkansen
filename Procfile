@@ -1,1 +1,1 @@
-web: rails s
+web: bundle exec rails server puma -p $PORT -e production
