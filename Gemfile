@@ -1,12 +1,11 @@
-source 'https://rubygems.org'
-
 ruby '2.2.2', :engine => 'jruby', :engine_version => '9.0.1.0'
+
+source 'https://rubygems.org'
 
 gem 'rails', '4.2.4'
 
 gem 'slim-rails', '3.0.1'
 
-gem 'rails_admin'
 gem 'simple_form'
 gem 'lograge'
 
@@ -17,7 +16,7 @@ gem 'mongoid', '5.0.0'
 #gem 'mongoid-autoinc'
 # gem 'mongoid-enum'
 # gem 'mongoid-geospatial'
-gem 'mongoid_fulltext'
+#gem 'mongoid_fulltext'
 
 gem 'sass-rails'
 gem 'uglifier', '>= 1.3.0'
