@@ -4,11 +4,12 @@
     meta charset="utf-8"
   body
     header
+
+    ons-page modifier="material"
       p class="notice"
         = notice
       p class="alert"
         = alert
-    ons-page modifier="material"
       div
         - if user_signed_in?
           | Welcome
@@ -20,6 +21,6 @@
           = link_to "Sign up", new_user_registration_path
       ons-toolbar modifier="material"
         div class="center" Wosh Center
-    footer
-      javascript:
-        var module = ons.bootstrap()
+      footer
+        javascript:
+          var module = ons.bootstrap()
